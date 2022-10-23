@@ -68,15 +68,42 @@ ul {
   list-style: none;
 }
 
+.header-icon-btn {
+  width: 25px;
+  text-align: center;
+}
+
+.menu-btn .xmark {
+  font-size: 1.4rem;
+  display: none;
+}
+
+.menu-btn.is-open .bars {
+  display: none;
+}
+
+.menu-btn.is-open .xmark {
+  display: block;
+}
+
 .menu {
   color: var(--black-clr);
   position: absolute;
   top: 100%;
   left: 0;
+  padding: 1rem 0;
+  height: calc(100vh - var(--header-height));
+  height: 100vh;
   background-color: var(--white-clr);
+  /* background-color: rgb(255 255 255 / .8); */
   width: 100%;
   display: none;
 }
+
+.menu.open {
+  display: block;
+}
+
 
 .menu ul {
   display: flex;
@@ -96,6 +123,7 @@ ul {
 
 .menu a:hover {
   background-color: var(--light-grey);
+  /* background-color: rgb(255 255 255 / .9); */
 }
 
 /* ----- MAIN ---- */

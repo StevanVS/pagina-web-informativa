@@ -14,11 +14,14 @@
   </head>
   <body>
     <header>
-      <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+      <div class="menu-btn header-icon-btn" data-menu-btn>
+        <i class="fa-solid fa-bars bars"></i>
+        <i class="fa-solid fa-xmark xmark"></i>
+      </div>
       <a href="/" class="logo">
-        <img src="./imgs/logo_watch_world.webp" alt="Logo WATCH WORLD" />
+        <img src="/imgs/logo_watch_world.webp" alt="Logo WATCH WORLD" />
       </a>
-      <nav class="menu">
+      <nav class="menu" data-menu>
         <ul class="menu-list">
           <li><a href="">INICIO</a></li>
           <li><a href="">ORGANIZACIÓN</a></li>
@@ -33,7 +36,9 @@
           <li><a href="">CONTACTO</a></li>
         </ul>
       </nav>
-      <a href="#" class="user-btn"><i class="fa-solid fa-user"></i></a>
+      <a href="#" class="user-btn header-icon-btn">
+        <i class="fa-solid fa-user"></i>
+      </a>
     </header>
     <main>
       <section class="banner-info-section">
@@ -96,7 +101,7 @@
             </div>
           </div>
           <div class="chunk">
-            <img src="./imgs/logo_watch_world.webp" alt="Logo WATCH WORLD" />
+            <img src="/imgs/logo_watch_world.webp" alt="Logo WATCH WORLD" />
           </div>
         </div>
         <div class="rights">
@@ -104,5 +109,6 @@
         </div>
       </footer>
     </main>
+    <script src="/js/menu.js"></script>
   </body>
 </html>
