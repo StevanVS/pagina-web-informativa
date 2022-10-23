@@ -5,13 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
+    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a319e6b99d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <form>
-      <input type="text" name="names" />
-      <input type="text" name="lastnames" />
-      <input type="text" name="subject" />
-      <input type="text" name="message" />
+    <form data-form>
+      <input type="text" name="names" placeholder="Nombres" />
+      <input type="text" name="lastnames" placeholder="Apellidos" />
+      <input type="tel" name="telephone" placeholder="Teléfono" />
+      <input type="text" name="subject" placeholder="Asunto" />
+      <textarea
+        name="message"
+        cols="30"
+        rows="10"
+        placeholder="Mensaje"
+      ></textarea>
+      <button type="submit" data-submit-btn>ENVIAR</button>
     </form>
+    <script src="/js/contactForm.js"></script>
   </body>
 </html>

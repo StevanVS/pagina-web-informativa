@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+
+  --black-clr: #000;
+  --white-clr: #fff;
+  --dark-grey: #1E1E1E;
+  --light-grey: #eee;
+
+  --header-height: 3rem;
+  --page-padding: 1.5rem;
+
+  --transition: 800ms ease;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* ----- HEADER ----- */
+
+header {
+  position: fixed;
+  z-index: 10;
+  background-color: var(--black-clr);
+  color: var(--white-clr);
+
+  width: 100%;
+  height: var(--header-height);
+  padding: 0 var(--page-padding);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header i {
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+img {
+  display: block;
+}
+
+.logo img {
+  height: 30px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu {
+  color: var(--black-clr);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--white-clr);
+  width: 100%;
+  display: none;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu .menu-list li a {
+  padding: .6rem 1.5rem;
+  font-weight: 700;
+}
+
+
+.menu .menu-list .submenu-list a {
+  padding: .4rem 3rem;
+  font-weight: 400;
+}
+
+.menu a:hover {
+  background-color: var(--light-grey);
+}
+
+/* ----- MAIN ---- */
+
+main {
+  padding-top: var(--header-height);
+}
+
+section {
+  margin: var(--page-padding) 0;
+}
+
+section:first-of-type {
+  margin-top: 0;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+  border-top: 1px solid var(--black-clr);
+}
+
+footer .wrapper {
+  padding: 1rem var(--page-padding);
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+
+footer .wrapper .chunk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .wrapper .chunk .contact-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+footer .wrapper .chunk .contact-info {
+  margin-bottom: .2rem;
+}
+
+footer .wrapper .chunk .contact-info i {
+  font-size: 1.2rem;
+}
+
+footer .wrapper .chunk .contact-info span {
+  margin-left: 0.2rem;
+  ;
+}
+
+footer .rights {
+  color: var(--white-clr);
+  background-color: var(--dark-grey);
+  font-size: .9rem;
+  padding: .3rem var(--page-padding);
+}
+
+/* ----- generic classes ------ */
+
+.thin-title {
+  font-weight: 300;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.bold-title {
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ------ INICIO ------ */
+
+.banner-info-section .banner {
+  height: 300px;
+  background-image: url(/imgs/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-info-section .info {
+  margin: 0 var(--page-padding);
+  margin-top: 1rem;
+}
+
+.banner-info-section .info h1 {
+  font-size: 2.3rem;
+}
+
+.banner-info-section .info p {
+  text-align: justify;
+}
+
+.values-section .card {
+  background-color: var(--black-clr);
+  color: var(--white-clr);
+  text-align: center;
+
+  margin: auto;
+  width: 30ch;
+  padding: .8rem 1.5rem;
+}
+
+.values-section .card ul {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+
+.products-section .wrapper {
+  margin: 0 var(--page-padding);
+}
+
+.products-section .wrapper h2 {
+  margin-bottom: .5rem;
+}
+
+.products-section .wrapper .categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+.products-section .category {
+  cursor: pointer;
+  position: relative;
+  aspect-ratio: 1/1;
+  /* min-width: 400px; */
+  overflow: hidden;
+}
+
+.products-section .category img {
+  width: 100%;
+  margin-top: -3rem;
+  transition: scale var(--transition);
+}
+
+.products-section .category:hover img {
+  scale: 1.2;
+}
+
+.products-section .category span {
+  color: var(--white-clr);
+  font-size: 2rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: .4rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+/* ----- CONTACTO ----- */
