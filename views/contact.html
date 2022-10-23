@@ -13,19 +13,89 @@
     ></script>
   </head>
   <body>
-    <form data-form>
-      <input type="text" name="names" placeholder="Nombres" />
-      <input type="text" name="lastnames" placeholder="Apellidos" />
-      <input type="tel" name="telephone" placeholder="Teléfono" />
-      <input type="text" name="subject" placeholder="Asunto" />
-      <textarea
-        name="message"
-        cols="30"
-        rows="10"
-        placeholder="Mensaje"
-      ></textarea>
-      <button type="submit" data-submit-btn>ENVIAR</button>
-    </form>
+    <header></header>
+    <main>
+      <section class="contact-text-section">
+        <div class="text-wrapper">
+          <h1 class="thin-title">DÉJANOS UN MENSAJE</h1>
+          <p>
+            Para ponerse en contacto con nosotros, favor llenar el siguiente
+            formulario y presionar enviar. Pronto te daremos una respuesta a tu
+            requerimiento.
+          </p>
+        </div>
+      </section>
+      <section class="contact-form-section">
+        <form class="text-wrapper contact-form" data-form>
+          <input
+            class="input"
+            type="text"
+            name="names"
+            placeholder="Nombres"
+            data-names-input
+          />
+          <input
+            class="input"
+            type="text"
+            name="lastnames"
+            placeholder="Apellidos"
+            data-lastnames-input
+          />
+          <input
+            class="input"
+            type="tel"
+            name="telephone"
+            placeholder="Teléfono"
+            data-telephone-input
+          />
+          <input
+            class="input"
+            type="text"
+            name="subject"
+            placeholder="Asunto"
+            data-subject-input
+          />
+          <textarea
+            class="input"
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Mensaje"
+            data-message-input
+          ></textarea>
+          <button class="submit-btn" type="submit" data-submit-btn>
+            ENVIAR
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <div class="chunk">
+          <p class="contact-title">Canales de servicio al cliente</p>
+        </div>
+        <div class="chunk">
+          <div class="contact-info">
+            <i class="fa-solid fa-phone"></i>
+            <span>593939042120</span>
+          </div>
+          <div class="contact-info">
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@watchworld.com.ec</span>
+          </div>
+        </div>
+        <div class="chunk">
+          <img
+            class="img-logo"
+            src="/imgs/logo_watch_world.webp"
+            alt="Logo WATCH WORLD"
+          />
+        </div>
+      </div>
+      <div class="rights">
+        <p>Página Web diseñada por <strong>Stevan Vélez Solórzano</strong></p>
+      </div>
+    </footer>
     <script src="/js/contactForm.js"></script>
   </body>
 </html>

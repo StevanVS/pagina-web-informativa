@@ -1,9 +1,9 @@
 const form = document.querySelector("[data-form]");
-const namesInput = form.names;
-const lastnamesInput = form.lastnames;
-const telephoneInput = form.telephone;
-const subjectInput = form.subject;
-const messageInput = form.message;
+const namesInput = document.querySelector("[data-names-input]");
+const lastnamesInput = document.querySelector("[data-lastnames-input]");
+const telephoneInput = document.querySelector("[data-telephone-input]");
+const subjectInput = document.querySelector("[data-subject-input]");
+const messageInput = document.querySelector("[data-message-input]");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -37,4 +37,6 @@ form.addEventListener("submit", (e) => {
   telephoneInput.value = "";
   subjectInput.value = "";
   messageInput.value = "";
+
+  namesInput.focus();
 });
