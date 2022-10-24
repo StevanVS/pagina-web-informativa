@@ -11,6 +11,7 @@
   --grey-clr: hsl(0 0% 50%);
   --dark-grey-clr: #1E1E1E;
   --light-grey-clr: #eee;
+  --red-clr: hsl(0, 100%, 40%);
 
   --header-height: 3rem;
   --page-padding: 1.5rem;
@@ -444,6 +445,11 @@ footer .rights {
   border: 1px solid var(--grey-clr);
   outline: none;
 }
+
+.contact-form-section .contact-form .input.error {
+  border: 1px solid var(--red-clr);
+}
+
 
 .contact-form-section .contact-form .input:focus {
   outline: 2px solid var(--black-clr);
