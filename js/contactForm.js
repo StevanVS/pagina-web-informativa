@@ -8,6 +8,8 @@ const messageInput = document.querySelector("[data-message-input]");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  namesInput.focus();
+
   const names = namesInput.value;
   const lastnames = lastnamesInput.value;
   const telephone = telephoneInput.value;
@@ -37,6 +39,4 @@ form.addEventListener("submit", (e) => {
   telephoneInput.value = "";
   subjectInput.value = "";
   messageInput.value = "";
-
-  namesInput.focus();
 });
