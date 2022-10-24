@@ -5,7 +5,9 @@
   font-family: 'Roboto', sans-serif;
 
   --black-clr: #000;
+  --black-clr: hsl(0, 0%, 3%);
   --white-clr: #fff;
+  /* --white-clr: hsl(0, 0%, 97%); */
   --grey-clr: hsl(0 0% 50%);
   --dark-grey-clr: #1E1E1E;
   --light-grey-clr: #eee;
@@ -30,6 +32,7 @@
 }
 
 body {
+  background-color: var(--white-clr);
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -417,9 +420,15 @@ footer .rights {
 
 /* ----- CONTACTO ----- */
 
-.contact-text-section .text-wrapper {
-  text-align: center;
+.contact-form-section .wrapper {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form-section .text-wrapper {
+  text-align: center;
 }
 
 .contact-form-section .contact-form {
@@ -430,6 +439,7 @@ footer .rights {
 
 .contact-form-section .contact-form .input {
   font-family: inherit;
+  font-size: inherit;
   padding: .7rem .5rem;
   border: 1px solid var(--grey-clr);
   outline: none;
@@ -534,12 +544,10 @@ footer .rights {
   }
 
   .menu {
-    /* position: relative; */
     top: auto;
     background-color: transparent;
     color: inherit;
     height: auto;
-    /* width: auto; */
     padding: 0;
     display: block;
   }
@@ -552,10 +560,8 @@ footer .rights {
 
   .menu .menu-list .submenu-list {
     position: absolute;
-    top: calc(100%);
-    background-color: black;
-    background-color: white;
-    color: black;
+    background-color: var(--white-clr);
+    color: var(--black-clr);
     display: none;
   }
 
@@ -614,17 +620,14 @@ footer .rights {
     justify-content: center;
   }
 
-  /* <banner/> */
 
   /* <categoria-inicio> */
   .products-section .category img {
     margin-top: 0;
   }
 
-  /* <categoria-inicio/> */
 
   /* <values> */
-
   .values-section .card {
     width: fit-content;
 
@@ -636,7 +639,17 @@ footer .rights {
     justify-content: center;
   }
 
-  /* <values/> */
+  /* <contact> */
+  .contact-form-section .wrapper {
+    flex-direction: row;
+    gap: 3rem;
+  }
 
+  .contact-form-section .wrapper .text-form {
+    padding-top: 3rem;
+  }
 
+  .contact-form-section .wrapper>[class$="form"] {
+    flex: 1;
+  }
 }

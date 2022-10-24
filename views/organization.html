@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Novacero - Organización</title>
+    <title>Nosotros</title>
     <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/styles/style.css" />
     <script
@@ -13,7 +13,35 @@
     ></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="menu-btn header-icon-btn" data-menu-btn>
+        <i class="fa-solid fa-bars bars"></i>
+        <i class="fa-solid fa-xmark xmark"></i>
+      </div>
+      <a href="/" class="logo">
+        <img src="/imgs/logo_watch_world.webp" alt="Logo WATCH WORLD" />
+      </a>
+      <nav class="menu" data-menu>
+        <ul class="menu-list">
+          <li><a href="/">INICIO</a></li>
+          <li><a href="/views/organization.html">ORGANIZACIÓN</a></li>
+          <li>
+            <a href="/views/products.html">PRODUCTOS</a>
+            <ul class="submenu-list">
+              <li>
+                <a href="/views/products.html#HOMBRE-category">HOMBRES</a>
+              </li>
+              <li><a href="/views/products.html#MUJER-category">MUJERES</a></li>
+              <!-- <li><a href="">SMARTWATCH</a></li> -->
+            </ul>
+          </li>
+          <li><a href="/views/contact.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="user-btn header-icon-btn">
+        <i class="fa-solid fa-user"></i>
+      </a>
+    </header>
     <main>
       <section class="company-info-section">
         <div class="banner">
@@ -95,7 +123,9 @@
           </div>
         </div>
         <div class="rights">
-          <p>Página Web diseñada por <strong>Stevan Vélez Solórzano</strong></p>
+          <p>
+            Página Web desarrollada por <strong>Stevan Vélez Solórzano</strong>
+          </p>
         </div>
       </footer>
     </main>
