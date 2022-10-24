@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root {
-  --font: 'Roboto', sans-serif;
   font-size: 18px;
-  font-family: var(--font);
+  font-family: 'Roboto', sans-serif;
 
   --black-clr: #000;
   --white-clr: #fff;
@@ -352,8 +351,69 @@ footer .rights {
   flex: 1;
 }
 
-
 /* ------ PRODUCTOS ------- */
+
+.product-category-section .category-title {
+  font-size: 2rem;
+  margin-top: .5rem;
+}
+
+.product-category-section .products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product-category-section .product {
+  padding: .7rem .4rem;
+  margin: .5rem;
+  padding-top: 0;
+
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+
+  transition: box-shadow 400ms ease;
+}
+
+.product-category-section .product:hover,
+.product-category-section .product:focus-within {
+  box-shadow: 0 0 .5rem 0 #ccc;
+}
+
+.product-category-section .product img {
+  width: 100%;
+}
+
+.product-category-section .product .name {
+  font-weight: 300;
+  text-align: center;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-category-section .product .price-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.product-category-section .product .price-and-buy {
+  background-color: var(--black-clr);
+  color: var(--white-clr);
+  font-weight: 500;
+  padding: .5rem 1.3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
 
 /* ----- CONTACTO ----- */
 
@@ -412,6 +472,9 @@ footer .rights {
     justify-content: center;
   }
 
+  .product-category-section .product .price-and-buy {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 768px) {
@@ -451,6 +514,10 @@ footer .rights {
 
   .mission-vision-section .text-wrapper {
     flex-direction: row;
+  }
+
+  .product-category-section .products-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
