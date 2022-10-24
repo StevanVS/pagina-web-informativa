@@ -550,16 +550,31 @@ footer .rights {
     gap: .5rem;
   }
 
-  .menu .submenu-list {
+  .menu .menu-list .submenu-list {
+    position: absolute;
+    top: calc(100%);
+    background-color: black;
+    background-color: white;
+    color: black;
     display: none;
   }
 
-  .menu .menu-list li a {
-    position: relative;
-    padding: .2rem .2rem;
+  .menu .menu-list .submenu-list li a {
+    padding-left: 1rem;
   }
 
-  .menu .menu-list li a::after {
+
+  .menu .menu-list li:hover>.submenu-list {
+    display: block;
+  }
+
+  .menu .menu-list>li>a {
+    position: relative;
+    padding: .2rem .2rem;
+    background-color: transparent;
+  }
+
+  .menu .menu-list>li>a::after {
     content: '';
     background-color: var(--white-clr);
     position: absolute;
@@ -572,11 +587,7 @@ footer .rights {
     transition: 300ms ease;
   }
 
-  .menu .menu-list li a:hover {
-    background-color: transparent;
-  }
-
-  .menu .menu-list li a:hover::after {
+  .menu .menu-list>li>a:hover::after {
     opacity: 1;
     visibility: visible;
   }
