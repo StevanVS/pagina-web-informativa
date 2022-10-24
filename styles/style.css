@@ -344,6 +344,11 @@ footer .rights {
   padding: 1rem 0;
 }
 
+.company-info-section .banner .info p {
+  margin-bottom: .5rem;
+}
+
+
 .mission-vision-section .text-wrapper {
   text-align: center;
   display: flex;
@@ -530,6 +535,7 @@ footer .rights {
 
   .mission-vision-section .text-wrapper {
     flex-direction: row;
+    padding-top: 1rem;
   }
 
   .product-category-section .products-grid {
@@ -643,6 +649,11 @@ footer .rights {
     flex-direction: row;
     gap: 3rem;
     justify-content: center;
+  }
+
+  /* <quienes-somos> */
+  .company-info-section .banner .info {
+    padding: 3rem 0;
   }
 
   /* <contact> */
